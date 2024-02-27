@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvWelcome.text = "Welcome ${userRepository.getUser()}"
+        binding.tvWelcome.text = "Welcome User : ${userRepository.getUser()}"
 
         binding.btnLogout.setOnClickListener {
             userRepository.logoutUser()
